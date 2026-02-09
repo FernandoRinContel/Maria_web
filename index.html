@@ -1,11 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Mi web</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Raleway&family=Italianno&display=swap" rel="stylesheet">
+    <style>
+        body { margin:0; font-family: 'Raleway', sans-serif; background:#fff; color:#000; }
+        header { padding:2rem; text-align:center; background:#dfd3bd; }
+        h1 { font-family: 'Alegreya SC', serif; font-size:3rem; margin:0; }
+        section { padding:3rem 2rem; max-width:1200px; margin:auto; }
+        .events, .bio, .contact { margin-top:2rem; }
+        .events div, .bio div, .contact div { margin-bottom:1.5rem; }
+        a.btn { padding:0.5rem 1rem; border:2px solid #000; text-decoration:none; color:#000; display:inline-block; transition:0.3s; }
+        a.btn:hover { background:#000; color:#fff; }
+        img { max-width:100%; height:auto; display:block; margin-bottom:1rem; }
+    </style>
 </head>
 <body>
-  <h1>Hola, esta es mi web</h1>
-  <p>Funciona </p>
+
+<header>
+    <h1>Mi Nombre</h1>
+    <p>Bienvenido a mi sitio web profesional</p>
+</header>
+
+<section class="events">
+    <h2>Próximos Eventos</h2>
+    <div>
+        <h3>Evento 1</h3>
+        <p>Fecha, lugar y descripción</p>
+        <a class="btn" href="#">Más info</a>
+    </div>
+    <div>
+        <h3>Evento 2</h3>
+        <p>Fecha, lugar y descripción</p>
+        <a class="btn" href="#">Más info</a>
+    </div>
+</section>
+
+<section class="bio">
+    <h2>Sobre Mí</h2>
+    <div>
+        <p>Aquí va tu biografía resumida o presentación.</p>
+        <img src="tu-imagen.jpg" alt="Tu nombre">
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contacto</h2>
+    <div>
+        <p>Email: ejemplo@correo.com</p>
+        <a class="btn" href="mailto:ejemplo@correo.com">Enviar Email</a>
+    </div>
+</section>
+
+<footer style="text-align:center; padding:2rem; background:#eee;">
+    &copy; 2026 Mi Nombre. Todos los derechos reservados.
+</footer>
+
 </body>
 </html>
 

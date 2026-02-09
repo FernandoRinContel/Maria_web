@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Web</title>
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+SC&family=Raleway&family=Italianno&display=swap" rel="stylesheet">
+    <!-- Fuentes elegantes -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
     <style>
-        body { margin:0; font-family: 'Raleway', sans-serif; background:#fff; color:#000; }
-        header { padding:2rem; text-align:center; background:#dfd3bd; }
+        body { 
+            margin:0; 
+            font-family: 'Raleway', sans-serif; 
+            background:#fff; 
+            color:#000; 
+        }
+        header {
+            position: relative;
+            height: 100vh;
+            background-color: #dfd3bd; /* fondo crema */
+            overflow: hidden;
+        }
+
+        .bg-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40%;              
+            height: 100%;
+            background-image: url('maria.jpeg');
+            background-size: contain;  
+            background-position: top left;
+            background-repeat: no-repeat;
+            z-index: 0;
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* centra en toda la pantalla */
+            text-align: center;
+            color: #000;
+            z-index: 1;
+        }
+
+        /* Estilos elegantes para el nombre y subtítulo */
+        .header-content h1 {
+            font-family: 'MonteCarlo', cursive;
+            font-size: 5rem; /* puedes ajustar tamaño */
+            margin: 0;
+        }
+
+        .header-content p {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-top: 0.5rem;
+        }
+
         h1 { font-family: 'Alegreya SC', serif; font-size:3rem; margin:0; }
         section { padding:3rem 2rem; max-width:1200px; margin:auto; }
         .events, .bio, .contact { margin-top:2rem; }
@@ -20,8 +69,11 @@
 <body>
 
 <header>
-    <h1>Mi Nombre</h1>
-    <p>Bienvenido a mi sitio web profesional</p>
+    <div class="bg-image"></div>
+    <div class="header-content">
+        <h1>Maria Matshkalyan</h1>
+        <p>Violinist</p>
+    </div>
 </header>
 
 <section class="events">
@@ -41,8 +93,14 @@
 <section class="bio">
     <h2>Sobre Mí</h2>
     <div>
-        <p>Aquí va tu biografía resumida o presentación.</p>
-        <img src="tu-imagen.jpg" alt="Tu nombre">
+        <p> Nació en Yerevan (Armenia) en 2001. Desde 2023 estudia en la Cátedra de Violín Telefónica de la Escuela Superior de Música Reina Sofía, con el profesor Marco Rizzi. Disfruta de beca Fundación Albéniz. En 2025, ha recibido de manos de Su Majestad la Reina Doña Sofía el Diploma de alumna más sobresaliente de su cátedra.</p>
+        
+ <p> Comenzó a estudiar violín a los 7 años. Posteriormente se ha formado en la Academia de Música de Zagreb (Croacia), en la clase de Leonid Sorokow (dentro del programa Erasmus+) y en el Conservatorio Estatal de Ereván Komitas, en la clase de Karen Shahgaldyan. También ha asistido a clases magistrales de Hrachya Harutyunian, Emmanuel Tjeknavorian, Sergei Dogadin, Fedor Rudin, Sergej Krylov, Miriam Fried, Ulf Wallin y Pavel Vernikov.</p> <p> Ganadora de numerosos premios en concurso nacionales, en 2022 recibió el cuarto premio en el Concurso Internacional Marine Iashvili para instrumentos de cuerda en Tiflis (Georgia).</p>
+ 
+ <p> Además de dar conciertos y recitales en su país natal, Francia, Suiza, Austria y Croacia, ha tocado con la Orquesta Sinfónica Nacional de Armenia, la Orquesta Sinfónica Nacional de Tiflis y ha participado en el proyecto Orquesta de la Independencia y en el festival internacional de jóvenes músicos Nombres Nuevos.</p> 
+ 
+ <p> Como alumna de la Escuela, ha tocado con la Orquesta Freixenet (dirigida por Péter Csaba, Sir András Schiff y Nicolás Pasquet) y con la Sinfonietta (dirigida por Zsolt Nagy). Asimismo, ha sido miembro del Cuarteto Dvořák y del Dúo Mendelssohn.</p>
+       
     </div>
 </section>
 
@@ -55,7 +113,7 @@
 </section>
 
 <footer style="text-align:center; padding:2rem; background:#eee;">
-    &copy; 2026 Mi Nombre. Todos los derechos reservados.
+    &copy; 2026 Maria Matshkalyan. Todos los derechos reservados.
 </footer>
 
 </body>
